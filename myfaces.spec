@@ -34,7 +34,7 @@
 Summary:        JSF Implementation
 Name:           myfaces
 Version:        1.1.0
-Release:        %mkrel 3.3
+Release:        %mkrel 3.4
 Epoch:          0
 License:        Apache License
 URL:            http://myfaces.apache.org/
@@ -68,7 +68,7 @@ BuildRequires:  struts
 #BuildRequires:  tlddoc
 BuildRequires:  xdoclet
 BuildRequires:  xjavadoc
-BuildRequires:  xml-commons-apis
+BuildRequires:  xml-commons-jaxp-1.3-apis
 Requires:  jakarta-commons-beanutils
 Requires:  jakarta-commons-codec
 Requires:  jakarta-commons-collections
@@ -81,7 +81,7 @@ Requires:  jsp
 Requires:  portlet-1.0-api
 Requires:  servletapi5
 Requires:  struts
-Requires:  xml-commons-apis
+Requires:  xml-commons-jaxp-1.3-apis
 %if %{gcj_support}
 BuildRequires:    java-gcj-compat-devel
 Requires(post):   java-gcj-compat
