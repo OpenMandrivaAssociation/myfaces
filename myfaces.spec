@@ -34,7 +34,7 @@
 Summary:        JSF Implementation
 Name:           myfaces
 Version:        1.1.0
-Release:        %mkrel 3.4
+Release:        %mkrel 3.4.0
 Epoch:          0
 License:        Apache License
 URL:            http://myfaces.apache.org/
@@ -148,9 +148,9 @@ ln -sf $(build-classpath xjavadoc) .
 popd
 
 cd build
-export OPT_JAR_LIST=
+export OPT_JAR_LIST=:
 export CLASSPATH=$(build-classpath ant/ant-trax xalan-j2 xalan-j2-serializer)
-%ant -Dskip.sandbox=true dist-all
+%{ant} -Dskip.sandbox=true dist-all
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -200,15 +200,6 @@ rm -rf $RPM_BUILD_ROOT
 %postun
 %{clean_gcjdb}
 %endif
-
-%post javadoc
-rm -f %{_javadocdir}/%{name}
-ln -s %{name}-%{version} %{_javadocdir}/%{name}
-
-%postun javadoc
-if [ "$1" = "0" ]; then
-  rm -f %{_javadocdir}/%{name}
-fi
 
 %files
 %defattr(0644,root,root,0755)
