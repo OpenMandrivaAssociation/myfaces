@@ -34,7 +34,7 @@
 Summary:        JSF Implementation
 Name:           myfaces
 Version:        1.1.0
-Release:        %mkrel 3.4.1
+Release:        %mkrel 3.4.2
 Epoch:          0
 License:        Apache License
 URL:            http://myfaces.apache.org/
@@ -84,8 +84,6 @@ Requires:  struts
 Requires:  xml-commons-jaxp-1.3-apis
 %if %{gcj_support}
 BuildRequires:    java-gcj-compat-devel
-Requires(post):   java-gcj-compat
-Requires(postun): java-gcj-compat
 %else
 BuildArch:      noarch
 %endif
