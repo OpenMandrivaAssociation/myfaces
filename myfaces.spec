@@ -34,7 +34,7 @@
 Summary:        JSF Implementation
 Name:           myfaces
 Version:        1.1.0
-Release:        %mkrel 3.4.2
+Release:        %mkrel 3.4.3
 Epoch:          0
 License:        Apache License
 URL:            http://myfaces.apache.org/
@@ -45,7 +45,7 @@ Source0:        myfaces-1.1.0-src.tar.bz2
 # svn export https://svn.apache.org/repos/asf/myfaces/release/tags/1_1_0
 
 Patch0:         myfaces-1.1.0-build_xml.patch
-BuildRequires:  ant >= 0:1.6, ant-junit >= 0:1.6, ant-trax >= 0:1.6, xalan-j2, jpackage-utils >= 0:1.5
+BuildRequires:  ant >= 0:1.6, ant-junit >= 0:1.6, ant-trax >= 0:1.6, xalan-j2, java-rpmbuild >= 0:1.5
 BuildRequires:  junit
 #BuildRequires:  asm
 #BuildRequires:  cglib
