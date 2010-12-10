@@ -34,7 +34,7 @@
 Summary:        JSF Implementation
 Name:           myfaces
 Version:        1.1.0
-Release:        %mkrel 3.4.4
+Release:        %mkrel 3.4.5
 Epoch:          0
 License:        Apache License
 URL:            http://myfaces.apache.org/
