@@ -1,0 +1,18 @@
+--- build/build.xml.sav	2005-09-13 20:06:25.000000000 +0200
++++ build/build.xml	2005-09-25 17:55:45.000000000 +0200
+@@ -278,6 +278,7 @@
+              C:>myproject\ant download-dependencies dist
+         -->
+ 
++<!--
+         <mkdir dir="${lib.dir}"/>
+ 
+         <get dest="${lib.dir}/commons-beanutils.jar"
+@@ -367,6 +368,7 @@
+             <get dest="${lib.dir}/asm.jar"
+               usetimestamp="true" ignoreerrors="true"
+               src="http://www.ibiblio.org/maven/asm/jars/asm-1.5.3.jar"/>
++-->
+ 
+         <property name="commons-beanutils.jar"       value="${lib.dir}/commons-beanutils.jar"/>
+         <property name="commons-codec.jar"           value="${lib.dir}/commons-codec.jar"/>
